@@ -97,7 +97,7 @@ var DoLoad = function()
 {
 	Msg(TXT.LOAD);
 	window.onerror = function(e,u,l) { Fail(e+'<br>('+u+':'+l+')'); };
-	Module = { TOTAL_MEMORY: 1024*1024*400, TOTAL_STACK: 1024*1024*20, currentScriptUrl: '-', preInit: DoExecute };
+	Module = { TOTAL_MEMORY: 1024*1024*500, TOTAL_STACK: 1024*1024*100, currentScriptUrl: '-', preInit: DoExecute };
 	var s = document.createElement('script'), d = document.documentElement;
 	s.src = 'game.js';
 	s.async = true;
